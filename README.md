@@ -1,15 +1,21 @@
-# python-django-naming-convention
+# Python Django Naming Convention
 
-## Naming Convention For python and Django :
-1. Class(Model) Name: will be Pascal case. 
-Example [MyClass]
-2. Variable and Function(template) Name: will be snake_case.
-Example [my_variable, my_function, base_template.html]
-3. URL Name: will be lowercase with hyphen. 
-Example [home-page]
+## Naming Convention for Python and Django
 
-## Naming Convention For Other Language :
-1. Class Name: will be Pascal case.
-Example [MyClass]
-2. Variable and Function Name: will be Camel case.
-Example [myVariable, myFunction]
+- **Class (Model) Name**: PascalCase
+  - Example: `MyClass`
+
+- **Variable and Function (Template) Name**: snake_case
+  - Example: `my_variable`, `my_function`, `base_template.html`
+
+- **URL Name**: lowercase with hyphen
+  - Example: `home-page`
+
+## Naming Convention for Other Languages
+
+- **Class Name**: PascalCase
+  - Example: `MyClass`
+
+- **Variable and Function Name**: camelCase
+  - Example: `myVariable`, `myFunction`
+
