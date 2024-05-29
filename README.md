@@ -1,0 +1,1 @@
+# python-django-naming-convention
