@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text],[type=password],[type=email] select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3 style="text-align: center;">Register </h3>
+
+<div>
+  <form action="{% url 'register' %}" method="POST">
+    {% csrf_token %}
+    <label for="fname">User name</label>
+    <input type="text" id="fname" name="username" placeholder="Your username..">
+   
+    <label for="fname">Email</label>
+    <input type="email" id="fname" name="email" placeholder="Your Email.."><br>
+
+    <label for="lname">Password</label>
+    <input type="password" id="lname" name="password" placeholder="Your password..">
+
+    <label for="lname">Confirm Password</label>
+    <input type="password" id="lname" name="cpassword" placeholder="Your Confirm Password..">
+
+    <label for="lname">Name</label>
+    <input type="text" id="lname" name="name" placeholder="Your Name..">
+
+    <label for="lname">Age</label>
+    <input type="text" id="lname" name="age" placeholder="Your Age..">
+
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select><br>
+
+
+
+    <label for="lname">Height (in cm)</label>
+    <input type="text" id="lname" name="height" placeholder="Your Height..">
+
+    <label for="lname">Weight (in kg)</label>
+    <input type="text" id="lname" name="weight" placeholder="Your Weight..">
+
+  
+    <input type="submit" value="Submit">
+    <a href="{% url 'login_page' %}">Already have an account</a>
+  </form>
+</div>
+
+</body>
+</html>
